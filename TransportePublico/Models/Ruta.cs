@@ -11,6 +11,9 @@ namespace TransportePublico.Models
         [Key]
         public int IDRuta { get; set; }
 
-        public string Nombre { get; set; }
+        [Required(ErrorMessage = "Debe ingresar el {0}")]
+        [StringLength(40, ErrorMessage = "El {0} no debe superar los {1} caracteres")]
+        [Display(Name = "Nombre de Ruta")] 
+        public string NombreRuta { get; set; }
     }
 }
