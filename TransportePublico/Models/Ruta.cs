@@ -9,6 +9,7 @@ namespace TransportePublico.Models
     public class Ruta
     {
         [Key]
+        [Display(Name = "Identificador de Ruta")]
         public int IDRuta { get; set; }
 
         [Required(ErrorMessage = "Debe ingresar el {0}")]

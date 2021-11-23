@@ -9,6 +9,7 @@ namespace TransportePublico.Models
     public class Estacion
     {
         [Key]
+        [Display(Name = "Identificador de Estación")]
         public int IDEstacion { get; set; }
 
         [Required(ErrorMessage ="Debe ingresar el {0}")]
